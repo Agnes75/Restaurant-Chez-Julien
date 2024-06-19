@@ -1,4 +1,4 @@
-import nav from "../components/nav.js"
+import nav from "../components/nav.js";
 
 const header = function(){
 
@@ -6,12 +6,12 @@ const header = function(){
         `
             <header class="header app__header">
                 <a href="/">
-                    Chez Fabrice
+                    Chez Julien
                 </a>
                 ${nav()}
             </header>
         `
     )
-}
+};
 
-export default header
+export default header;

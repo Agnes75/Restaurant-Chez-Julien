@@ -23,6 +23,6 @@ const nav = function(){
         
         `
     )
-}
+};
 
-export default nav
+export default nav;

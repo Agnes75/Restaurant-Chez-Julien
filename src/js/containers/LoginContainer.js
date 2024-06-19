@@ -1,4 +1,4 @@
-import formUI from "../components/formUI"
+
 
 // pour utiliser class il faut deja que sur la page on ait un formulaire identifié par login-form
 class LoginContainer{
@@ -7,10 +7,10 @@ constructor(){
     //onsubmit du formulaire  , action définie  par une fonction 
     //ayant pour parametre l'evenement, c'est à dire se déroulant quand l'evenememt onsubmit 
     //survient  et appelant une fonction onSubmit sur la classe
-    const formUI =documentgetElementById('login-form')
+    const form =document.getElementById('login-form')
     const self = this
     // dans l'écriture ci dessous e est automatiquement onsubmit
-    formUI.onsubmit = function(e){
+    form.onsubmit = function(e){
 
         self.onSubmit(e)    
 }
@@ -27,8 +27,8 @@ e.preventDefault()
 // preventDefault() permet d'empecher la réinitialisation automatique
 // par défaut de la page qui se déroule suite à  l'évement onsubmit du formulaire
 // reset en revanche est une réinitialisation volontaire du formulaire
-const email =documentgetElementById('email');
-const password =documentgetElementById('password');
+const email =document.getElementById('email');
+const password =document.getElementById('password');
 const emailValue =email.value
 const passwordValue =password.value
 console.log(emailValue,passwordValue)

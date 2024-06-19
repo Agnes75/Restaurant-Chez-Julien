@@ -26,4 +26,4 @@ const formUI =function(data){
 
         `)
 }
-export default formUI
+export default formUI;
