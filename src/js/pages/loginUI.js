@@ -6,30 +6,29 @@ import formUI from"../components/formUI.js";
 const loginUI=function(){
     const data = {
         formId:"login-form",
-        inputs:{
-          email:{
+        inputs:[
+           {
             id : "email",
             type :"email",
-            placeholder:"Entrez votre email",
-        },
-          password:{
+            placeholder:"Entrez votre email",},
+        {
             id : "password",
             type : "paswword",
             placeholder:"Entrez votre mot de passe",
         },
-        },
-        buttons :{
-            reset:{
+              ],
+        buttons :[
+            {
                 type :"reset",
-                ide :"reset",
+                id :"login-reset-button",
                 content :"Réinitialiser",
             },
-           submit: {
+            {
             type: "submit",
-            id :"submit",
+            id :"login-submit-button",
             content :"Valider",
            },
-        },
+        ],
     };
         return(`
         <main classe ="main login_main">

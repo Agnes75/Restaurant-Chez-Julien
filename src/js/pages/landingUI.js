@@ -20,7 +20,7 @@ const landingUI = function(){
             <main class="main landing__main">
                 
                 <section>
-                    ${buttonUI('Nos produits', 'landing-button', 'button')}
+                    ${buttonUI('landing-button','button', 'Nos produits')}
                 </section>
              
          
